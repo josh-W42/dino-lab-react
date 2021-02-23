@@ -1,7 +1,10 @@
 const Comment = (props) => {
   return (
     <div className="comment">
-      <p>{props.data}</p>
+      <p>
+        <span>{props.poster}:  </span> 
+        <span>{props.content}</span>
+      </p>
     </div>
   );
 }
